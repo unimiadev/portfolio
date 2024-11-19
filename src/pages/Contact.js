@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from "../context/LanguageContext";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/Contact.css";
 
@@ -20,13 +20,13 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `mailto:unimiadev@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:contact@unimia.dev?subject=Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
     <div className="contact-container">
       <div className="title-container">
-        <h1 className="contact-title">{t('CONTACT')}</h1>
+        <h1 className="contact-title">{t("CONTACT")}</h1>
         <span className="waving-emoji" role="img" aria-label="waving hand">
           👋
         </span>
@@ -34,7 +34,7 @@ function Contact() {
 
       <div className="social-links">
         <a
-          href="https://github.com/unimia"
+          href="https://github.com/unimiadev"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
@@ -59,7 +59,7 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            placeholder={t('YOUR_NAME')}
+            placeholder={t("YOUR_NAME")}
             className="form-input"
           />
         </div>
@@ -71,7 +71,7 @@ function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder={t('YOUR_EMAIL')}
+            placeholder={t("YOUR_EMAIL")}
             className="form-input"
           />
         </div>
@@ -82,18 +82,18 @@ function Contact() {
             value={formData.message}
             onChange={handleChange}
             required
-            placeholder={t('YOUR_MESSAGE')}
+            placeholder={t("YOUR_MESSAGE")}
             className="form-input form-textarea"
           />
         </div>
 
         <button type="submit" className="form-button">
-          {t('SEND_MESSAGE')}
+          {t("SEND_MESSAGE")}
         </button>
       </form>
 
       <p className="alternative-contact">
-        {t('OR_EMAIL_DIRECTLY')}{" "}
+        {t("OR_EMAIL_DIRECTLY")}{" "}
         <a href="mailto:contact@unimia.dev" className="email-link">
           CONTACT@UNIMIA.DEV
         </a>
