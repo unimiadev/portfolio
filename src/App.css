@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  background-color: var(--current-bg);
+  color: var(--current-fg);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App-logo {

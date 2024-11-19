@@ -1,0 +1,196 @@
+.home-container {
+  min-height: 100vh;
+  background-color: var(--current-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content {
+  position: relative;
+  text-align: center;
+}
+
+.center-image {
+  max-width: 35rem;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  animation: imageToggle 16s infinite;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Handjet', cursive;
+  font-weight: 800;
+  color: var(--title-color);
+  margin: 0;
+  z-index: 1;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.title-1 {
+  font-size: 30rem;
+  animation: slideOut 16s infinite;
+  animation-delay: 0s;
+}
+
+.title-2 {
+  font-size: 25rem;
+  animation: slideOut 16s infinite;
+  animation-delay: 3s;
+}
+
+.title-3 {
+  font-size: 25rem;
+  animation: slideOut 16s infinite;
+  animation-delay: 6s;
+}
+
+.title-4 {
+  font-size: 15rem;
+  animation: slideOut 16s infinite;
+  animation-delay: 10s;
+  white-space: normal;
+  width: max-content;
+  text-align: center;
+}
+
+@keyframes slideOut {
+  0%, 1% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  5%, 20% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  24%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+}
+
+@keyframes imageToggle {
+  0%, 63% {
+    opacity: 1;
+    visibility: visible;
+  }
+  65%, 95% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  97%, 100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.sparkle-text {
+  display: inline-block;
+  animation: weightAndColor 3s 11s forwards;
+  font-weight: 900;
+}
+
+@keyframes weightAndColor {
+  0% {
+    color: var(--title-color);
+  } 
+  100% {
+    color: var(--nav-color);
+  }
+}
+
+/* Add specific styles for Portuguese text */
+[data-language="PT-BR"] .title-4 {
+  font-size: 13rem; /* Smaller than the original 15rem */
+}
+
+/* Responsive styles for Home */
+@media screen and (max-width: 1200px) {
+  .title-1 { 
+    font-size: calc(30rem * 0.6);
+  }
+  .title-2, .title-3 { 
+    font-size: calc(25rem * 0.6);
+  }
+  .title-4 { 
+    font-size: calc(15rem * 0.6);
+  }
+  [data-language="PT-BR"] .title-4 {
+    font-size: calc(13rem * 0.6);
+  }
+  .center-image { 
+    max-width: calc(35rem * 0.6);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-1 { 
+    font-size: calc(30rem * 0.4);
+  }
+  .title-2, .title-3 { 
+    font-size: calc(25rem * 0.4);
+  }
+  .title-4 { 
+    font-size: calc(15rem * 0.4);
+    white-space: normal;
+    width: 90vw;
+  }
+  [data-language="PT-BR"] .title-4 {
+    font-size: calc(13rem * 0.4);
+  }
+  .center-image { 
+    max-width: calc(35rem * 0.4);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-1 { 
+    font-size: calc(30rem * 0.25);
+  }
+  .title-2, .title-3 { 
+    font-size: calc(25rem * 0.25);
+  }
+  .title-4 { 
+    font-size: calc(15rem * 0.25);
+    width: 85vw;
+  }
+  [data-language="PT-BR"] .title-4 {
+    font-size: calc(13rem * 0.25);
+  }
+  .center-image { 
+    max-width: calc(35rem * 0.25);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-1 { 
+    font-size: calc(30rem * 0.2);
+  }
+  .title-2, .title-3 { 
+    font-size: calc(25rem * 0.2);
+  }
+  .title-4 { 
+    font-size: calc(15rem * 0.2);
+    width: 80vw;
+  }
+  [data-language="PT-BR"] .title-4 {
+    font-size: calc(13rem * 0.2);
+  }
+  .center-image { 
+    max-width: calc(35rem * 0.2);
+  }
+}
+
+.project-card {
+  background-color: var(--current-fg);
+  border: 5px dotted var(--nav-color);
+  /* ... rest of styles ... */
+}

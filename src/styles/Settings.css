@@ -1,0 +1,130 @@
+.settings-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.settings-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--nav-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-button.active {
+  transform: rotate(180deg);
+}
+
+.settings-popup {
+  position: absolute;
+  top: calc(100% + 1rem);
+  right: 0;
+  background-color: var(--current-fg);
+  border: 3px dotted var(--nav-color);
+  padding: 1.5rem;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.settings-popup.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.settings-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.settings-option:last-child {
+  margin-bottom: 0;
+}
+
+.settings-label {
+  font-family: 'Handjet', cursive;
+  font-size: 1.2rem;
+  color: var(--nav-color);
+  font-weight: 500;
+}
+
+.toggle-button {
+  font-family: 'Handjet', cursive;
+  font-size: 1.2rem;
+  color: var(--nav-color);
+  background: none;
+  border: 2px solid var(--nav-color);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button:hover {
+  background-color: var(--nav-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+  .settings-container {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .settings-button {
+    font-size: 1.8rem;
+  }
+
+  .settings-popup {
+    min-width: 180px;
+    padding: 1.2rem;
+  }
+
+  .settings-label,
+  .toggle-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .settings-container {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .settings-button {
+    font-size: 1.6rem;
+  }
+
+  .settings-popup {
+    min-width: 160px;
+    padding: 1rem;
+  }
+
+  .settings-label,
+  .toggle-button {
+    font-size: 1rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .settings-button,
+  .toggle-button {
+    -webkit-tap-highlight-color: transparent;
+  }
+} 

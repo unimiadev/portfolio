@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# UNIMIA Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React, featuring smooth animations, multilingual support, and a dark/light theme toggle.
 
-## Available Scripts
+## 🌟 Live Demo
+[Visit Website](https://unimia.dev)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Smooth Animations**: Custom animations for enhanced user experience
+- **Multilingual Support**: Toggle between English and Brazilian Portuguese
+- **Theme Switching**: Dark and light mode with persistent user preference
+- **Interactive UI Elements**: 
+  - Animated text transitions
+  - Hover effects
+  - Mobile-friendly navigation
+  - Form interactions
+- **Persistent Settings**: User preferences for language and theme are saved locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Core
+- React.js
+- React Router DOM
+- CSS3
+- JavaScript (ES6+)
 
-### `npm test`
+### Additional Libraries
+- React Icons
+- Google Fonts (Handjet)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development Tools
+- Create React App
+- Git & GitHub
+- VS Code
+- npm
 
-### `npm run build`
+## 🎯 Key Features Breakdown
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Navigation
+- Dock-like behavior on desktop
+- Hamburger menu on mobile
+- Smooth transitions
+- Active route indication
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home Page
+- Dynamic text animations
+- Responsive scaling
+- Custom image transitions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### About Page
+- Interactive profile section
+- Detailed experience timeline
+- Skills showcase
+- Educational background
+- Language proficiency
 
-### `npm run eject`
+### Projects Page
+- Project cards with hover effects
+- Technology tags
+- Modal interactions
+- GitHub integration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Contact Page
+- Contact form
+- Social media links
+- Direct email option
+- Animated elements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Setup and Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository
+```bash
+git clone https://github.com/unimiadev/portfolio.git    
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project directory
+```bash
+cd portfolio
+```
 
-## Learn More
+3. Install dependencies
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Build for production
+```bash
+npm run build
+```
 
-### Code Splitting
+## 🎨 Design Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Custom color scheme with CSS variables
+- Consistent typography using Handjet font
+- Responsive scaling for different screen sizes
+- Smooth transitions and animations
+- Accessible color contrasts
+- Mobile-first approach
 
-### Analyzing the Bundle Size
+## 🔧 Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
 
-### Making a Progressive Web App
+## 📱 Responsive Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Desktop: 1200px and above
+- Tablet: 768px to 1199px
+- Mobile: 767px and below
+- Small Mobile: 350px and below
 
-### Advanced Configuration
+## 🌐 Language Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- English (EN)
+- Brazilian Portuguese (PT-BR)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👤 Author
 
-### `npm run build` fails to minify
+- GitHub: [@unimiadev](https://github.com/unimiadev)
+- Website: [unimia.dev](https://unimia.dev)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 💫 Acknowledgments
+
+- Design inspiration from various portfolio websites
+- React.js community for excellent documentation
+- All the developers who maintain the libraries used in this project
+
+

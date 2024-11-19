@@ -1,0 +1,20 @@
+:root {
+  --background-color: #FAF4F2;
+  --background-color-dark: #212121;
+  --title-color: #9CC5DA;
+  --nav-color: #DEABB4;
+  --white-color: #FFFEFE;
+  --black-color: #353434;
+}
+
+/* Default theme (light) */
+[data-theme="light"] {
+  --current-bg: var(--background-color);
+  --current-fg: var(--white-color);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --current-bg: var(--background-color-dark);
+  --current-fg: var(--black-color);
+} 
