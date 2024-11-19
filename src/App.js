@@ -8,6 +8,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Settings from './components/Settings';
+import Notification from './components/Notification';
 import './styles/variables.css';
 import './App.css';
 
@@ -18,6 +19,7 @@ function AppContent() {
     <Router>
       <div className="App" data-language={language}>
         <Settings />
+        <Notification />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

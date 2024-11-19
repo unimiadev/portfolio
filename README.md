@@ -16,7 +16,19 @@ A modern, responsive portfolio website built with React, featuring smooth animat
   - Hover effects
   - Mobile-friendly navigation
   - Form interactions
+  - System-specific welcome messages
+- **Smart Notifications**:
+  - System detection (Windows, MacOS, Linux, iOS, Android, iPad)
+  - Custom welcome messages based on user's device
+  - Time-based engagement notifications
+  - Interactive notification center
 - **Persistent Settings**: User preferences for language and theme are saved locally
+- **Dock-like Navigation**: MacOS-inspired navigation behavior
+- **Mobile Optimizations**:
+  - Hamburger menu with full-screen overlay
+  - Touch-optimized interactions
+  - Responsive text scaling
+  - Device-specific features
 
 ## 🛠 Technologies Used
 
@@ -44,10 +56,19 @@ A modern, responsive portfolio website built with React, featuring smooth animat
 - Smooth transitions
 - Active route indication
 
+### Notification System
+- Device detection
+- Custom welcome messages
+- Time-based notifications
+- Interactive notifications
+- Notification counter
+- Bell animation for new notifications
+
 ### Home Page
 - Dynamic text animations
 - Responsive scaling
 - Custom image transitions
+- Language-specific text sizing
 
 ### About Page
 - Interactive profile section
@@ -55,6 +76,7 @@ A modern, responsive portfolio website built with React, featuring smooth animat
 - Skills showcase
 - Educational background
 - Language proficiency
+- Freelancer focus
 
 ### Projects Page
 - Project cards with hover effects
@@ -103,6 +125,7 @@ npm run build
 - Smooth transitions and animations
 - Accessible color contrasts
 - Mobile-first approach
+- Dark/Light theme support
 
 ## 🔧 Browser Support
 
@@ -123,7 +146,6 @@ npm run build
 
 - English (EN)
 - Brazilian Portuguese (PT-BR)
-
 
 ## 👤 Author
 

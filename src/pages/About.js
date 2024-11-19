@@ -31,7 +31,7 @@ function About() {
 
             <h1 className="main-title">MATHEUS ABREU E LIMA</h1>
             <p className="subtitle">{t('ALIAS_SUBTITLE')}</p>
-            <p className="info-text">{t('YEARS_OLD')}</p>
+            <p className="info-text">FREELANCE DEVELOPER</p>
             <p className="info-text">{t('LOCATION')}</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ function About() {
 
             <div className="section-divider"></div>
 
-            <p className="column-subtitle">COMPLEMENTARY COURSES</p>
+            <p className="column-subtitle">{t('COMPLEMENTARY_COURSES')}</p>
             <p className="column-text">
               THE COMPLETE FLUTTER DEVELOPMENT BOOTCAMP WITH DART
               <br />

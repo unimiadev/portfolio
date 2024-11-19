@@ -22,7 +22,7 @@ export const translations = {
     YEARS_OLD: "23 YEARS OLD",
     LOCATION: "SOLEDADE/RS - BRAZIL",
     ABOUT_TEXT:
-      "I write code that speaks fluent ReactJS and JavaScript, bringing concepts to life with a sprinkle of HTML and CSS magic. A tech enthusiast with a Bachelor's degree in Computer Science, I've also dabbled in Flutter and .NET, but my heart belongs to building interactive, user-friendly web applications.",
+      "As a freelancer developer, I write code that speaks fluent ReactJS and JavaScript, bringing concepts to life with a sprinkle of HTML and CSS magic. A tech enthusiast with a Bachelor's degree in Computer Science, I've also dabbled in Flutter and .NET, but my heart belongs to building interactive, user-friendly web applications.",
     HIRE_ME_ANYWAY:
       "(BUT PLEASE, STILL HIRE ME FOR FLUTTER AND .NET PROJECTS ANYWAY)",
 
@@ -118,6 +118,36 @@ export const translations = {
       "BACHELOR'S DEGREE IN COMPUTER SCIENCE - UNIVERSIDADE DE PASSO FUNDO (UPF)",
     EDUCATION_GRADUATION: "GRADUATION: 2023",
     CLICK_ME: "CLICK ME!",
+
+    // Projects Descriptions
+    PROJECT_NATAN_TITLE: "NATAN TATTOO",
+    PROJECT_NATAN_DESC:
+      "A modern, responsive single-page website designed and developed for a professional tattoo artist. The website showcases the artist's work, provides information about services, and facilitates client contact.",
+
+    PROJECT_PORTFOLIO_TITLE: "UNIMIA PORTFOLIO",
+    PROJECT_PORTFOLIO_DESC:
+      "A personal portfolio website built with React, featuring smooth animations and responsive design. Showcasing my projects and skills in web development.",
+
+    NOTIFICATIONS: "NOTIFICATIONS",
+    CLEAR_ALL: "CLEAR ALL",
+    NO_NOTIFICATIONS: "NO NEW NOTIFICATIONS",
+    WELCOME_NOTIFICATION_TITLE: "WELCOME TO MY PORTFOLIO!",
+    WELCOME_NOTIFICATION_WINDOWS:
+      "I see you're a Windows user! That's great - I have even worked on building Windows applications before, but... have you ever heard of the Linux initiative?",
+    WELCOME_NOTIFICATION_MACOS:
+      "Hello, Mac user! As a developer who appreciates clean design, I'm sure you'll enjoy my (sometimes) minimalist approach to web development.",
+    WELCOME_NOTIFICATION_LINUX:
+      "A Linux user! I love Linux. Linux is great. Just as great as this portfolio. (I use Arch BTW)",
+    WELCOME_NOTIFICATION_IOS:
+      "Welcome, iOS user! I develop cross-platform mobile apps too using Flutter, so feel free to hire me for your next project!",
+    WELCOME_NOTIFICATION_IPAD:
+      "Perfect timing - this portfolio looks amazing on iPad! The larger screen really brings out the animations.",
+    WELCOME_NOTIFICATION_ANDROID:
+      "Welcome, Android user! The superior mobile OS! I develop cross-platform mobile apps too using Flutter, so feel free to hire me for your next project!",
+    WELCOME_NOTIFICATION_DEFAULT:
+      "Welcome to my portfolio! Feel free to explore my work and get in touch if you'd like to collaborate on a project!",
+    TIME_NOTIFICATION_TITLE: "STILL HERE? LET'S WORK TOGETHER!",
+    TIME_NOTIFICATION_MESSAGE: "I see you've been exploring my portfolio for a while now. If you're interested in working together, why not head over to the Contact page and drop me a message? I'd love to hear about your project!",
   },
   "PT-BR": {
     // Navigation
@@ -142,7 +172,7 @@ export const translations = {
     YEARS_OLD: "23 ANOS",
     LOCATION: "SOLEDADE/RS - BRASIL",
     ABOUT_TEXT:
-      "Eu escrevo código que fala ReactJS e JavaScript fluentemente, dando vida a conceitos com um toque de magia em HTML e CSS. Um entusiasta de tecnologia com Bacharelado em Ciência da Computação, também já me aventurei com Flutter e .NET, mas meu coração pertence à construção de aplicações web interativas e amigáveis.",
+      "Como um desenvolvedor freelancer, eu escrevo código que fala ReactJS e JavaScript fluentemente, dando vida a conceitos com um toque de magia em HTML e CSS. Um entusiasta de tecnologia com Bacharelado em Ciência da Computação, também já me aventurei com Flutter e .NET, mas meu coração pertence à construção de aplicações web interativas e amigáveis.",
     HIRE_ME_ANYWAY:
       "(MAS POR FAVOR, ME CONTRATE PARA PROJETOS EM FLUTTER E .NET MESMO ASSIM)",
 
@@ -238,5 +268,35 @@ export const translations = {
       "BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO - UNIVERSIDADE DE PASSO FUNDO (UPF)",
     EDUCATION_GRADUATION: "FORMATURA: 2023",
     CLICK_ME: "CLIQUE AQUI!",
+
+    // Projects Descriptions
+    PROJECT_NATAN_TITLE: "NATAN TATTOO",
+    PROJECT_NATAN_DESC:
+      "Um website moderno e responsivo de página única projetado e desenvolvido para um tatuador profissional. O site apresenta o trabalho do artista, fornece informações sobre serviços e facilita o contato com clientes.",
+
+    PROJECT_PORTFOLIO_TITLE: "PORTFÓLIO UNIMIA",
+    PROJECT_PORTFOLIO_DESC:
+      "Um site portfólio pessoal construído com React, apresentando animações suaves e design responsivo. Mostrando meus projetos e habilidades em desenvolvimento web.",
+
+    NOTIFICATIONS: "NOTIFICAÇÕES",
+    CLEAR_ALL: "LIMPAR TUDO",
+    NO_NOTIFICATIONS: "NENHUMA NOTIFICAÇÃO NOVA",
+    WELCOME_NOTIFICATION_TITLE: "BEM-VINDO AO MEU PORTFÓLIO!",
+    WELCOME_NOTIFICATION_WINDOWS:
+      "Vejo que você usa Windows! Ótimo - eu já trabalhei em aplicações Windows, mas... você já ouviu falar em Linux?",
+    WELCOME_NOTIFICATION_MACOS:
+      "Olá, usuário Mac! Como desenvolvedor que aprecia design limpo, tenho certeza que você vai gostar da minha abordagem (talvez) minimalista para desenvolvimento web.",
+    WELCOME_NOTIFICATION_LINUX:
+      "Um usuário Linux! Eu amo Linux. Linux é ótimo. Tão bom quanto este portfólio. (Eu uso Arch BTW)",
+    WELCOME_NOTIFICATION_IOS:
+      "Bem-vindo, usuário iOS! Eu também desenvolvo aplicativos mobile multiplataforma usando Flutter, então não hesite em me contratar para o seu próximo projeto!",
+    WELCOME_NOTIFICATION_IPAD:
+      "Momento perfeito - este portfólio fica incrível no iPad! A tela maior realmente destaca as animações.",
+    WELCOME_NOTIFICATION_ANDROID:
+      "Bem-vindo, usuário Android! O sistema operacional superior! Eu também desenvolvo aplicativos mobile multiplataforma usando Flutter, então não hesite em me contratar para o seu próximo projeto!",
+    WELCOME_NOTIFICATION_DEFAULT:
+      "Bem-vindo ao meu portfólio! Fique à vontade para explorar meu trabalho e entrar em contato se quiser colaborar em um projeto!",
+    TIME_NOTIFICATION_TITLE: "AINDA POR AQUI? VAMOS TRABALHAR JUNTOS!",
+    TIME_NOTIFICATION_MESSAGE: "Vejo que você está explorando meu portfólio há algum tempo. Se você está interessado em trabalharmos juntos, que tal ir até a página de Contato e me mandar uma mensagem? Adoraria ouvir sobre seu projeto!",
   },
 };

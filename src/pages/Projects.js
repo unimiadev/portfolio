@@ -9,13 +9,12 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "NATAN TATTOO",
-      description:
-        "A modern, responsive single-page website designed and developed for a professional tattoo artist. The website showcases the artist's work, provides information about services, and facilitates client contact.",
+      title: t('PROJECT_NATAN_TITLE'),
+      description: t('PROJECT_NATAN_DESC'),
       image: "/assets/media/images/project1.png",
       link: "https://github.com/unimiadev/natan-tattoo-landing",
       tags: [
-        "REACTS.JS",
+        "REACT.JS",
         "JAVASCRIPT",
         "CSS3",
         "RESPONSIVE DESIGN",
@@ -24,13 +23,12 @@ function Projects() {
     },
     {
       id: 2,
-      title: "UNIMIA PORTFOLIO",
-      description:
-        "A modern, responsive portfolio website built with React, featuring smooth animations, multilingual support, and a dark/light theme toggle. (AKA: This website)",
+      title: t('PROJECT_PORTFOLIO_TITLE'),
+      description: t('PROJECT_PORTFOLIO_DESC'),
       image: "/assets/media/images/project2.png",
       link: "https://github.com/unimiadev/portfolio",
       tags: [
-        "REACTS.JS",
+        "REACT.JS",
         "JAVASCRIPT",
         "CSS3",
         "RESPONSIVE DESIGN",
