@@ -147,7 +147,8 @@ export const translations = {
     WELCOME_NOTIFICATION_DEFAULT:
       "Welcome to my portfolio! Feel free to explore my work and get in touch if you'd like to collaborate on a project!",
     TIME_NOTIFICATION_TITLE: "STILL HERE? LET'S WORK TOGETHER!",
-    TIME_NOTIFICATION_MESSAGE: "I see you've been exploring my portfolio for a while now. If you're interested in working together, why not head over to the Contact page and drop me a message? I'd love to hear about your project!",
+    TIME_NOTIFICATION_MESSAGE:
+      "I see you've been exploring my portfolio for a while now. If you're interested in working together, why not head over to the Contact page and drop me a message? I'd love to hear about your project!",
   },
   "PT-BR": {
     // Navigation
@@ -172,7 +173,7 @@ export const translations = {
     YEARS_OLD: "23 ANOS",
     LOCATION: "SOLEDADE/RS - BRASIL",
     ABOUT_TEXT:
-      "Como um desenvolvedor freelancer, eu escrevo código que fala ReactJS e JavaScript fluentemente, dando vida a conceitos com um toque de magia em HTML e CSS. Um entusiasta de tecnologia com Bacharelado em Ciência da Computação, também já me aventurei com Flutter e .NET, mas meu coração pertence à construção de aplicações web interativas e amigáveis.",
+      "Como uma desenvolvedora freelancer, eu escrevo código que fala ReactJS e JavaScript fluentemente, dando vida a conceitos com um toque de magia em HTML e CSS. Um entusiasta de tecnologia com Bacharelado em Ciência da Computação, também já me aventurei com Flutter e .NET, mas meu coração pertence à construção de aplicações web interativas e amigáveis.",
     HIRE_ME_ANYWAY:
       "(MAS POR FAVOR, ME CONTRATE PARA PROJETOS EM FLUTTER E .NET MESMO ASSIM)",
 
@@ -297,6 +298,7 @@ export const translations = {
     WELCOME_NOTIFICATION_DEFAULT:
       "Bem-vindo ao meu portfólio! Fique à vontade para explorar meu trabalho e entrar em contato se quiser colaborar em um projeto!",
     TIME_NOTIFICATION_TITLE: "AINDA POR AQUI? VAMOS TRABALHAR JUNTOS!",
-    TIME_NOTIFICATION_MESSAGE: "Vejo que você está explorando meu portfólio há algum tempo. Se você está interessado em trabalharmos juntos, que tal ir até a página de Contato e me mandar uma mensagem? Adoraria ouvir sobre seu projeto!",
+    TIME_NOTIFICATION_MESSAGE:
+      "Vejo que você está explorando meu portfólio há algum tempo. Se você está interessado em trabalharmos juntos, que tal ir até a página de Contato e me mandar uma mensagem? Adoraria ouvir sobre seu projeto!",
   },
 };
