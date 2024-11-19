@@ -9,6 +9,9 @@
 .center-content {
   position: relative;
   text-align: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .center-image {
@@ -33,24 +36,30 @@
   z-index: 1;
   opacity: 0;
   white-space: nowrap;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .title-1 {
   font-size: 30rem;
   animation: slideOut 16s infinite;
   animation-delay: 0s;
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 .title-2 {
   font-size: 25rem;
   animation: slideOut 16s infinite;
   animation-delay: 3s;
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 .title-3 {
   font-size: 25rem;
   animation: slideOut 16s infinite;
   animation-delay: 6s;
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 .title-4 {
@@ -60,20 +69,21 @@
   white-space: normal;
   width: max-content;
   text-align: center;
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 @keyframes slideOut {
   0%, 1% {
     opacity: 0;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%) translateZ(0);
   }
   5%, 20% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateZ(0);
   }
   24%, 100% {
     opacity: 0;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%) translateZ(0);
   }
 }
 
@@ -193,4 +203,8 @@
   background-color: var(--current-fg);
   border: 5px dotted var(--nav-color);
   /* ... rest of styles ... */
+}
+
+.title.initialized {
+  transition: transform 0.1s ease-out;
 }
