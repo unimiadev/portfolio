@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from "../context/LanguageContext";
 import "../styles/About.css";
 
 function About() {
@@ -23,22 +23,22 @@ function About() {
             className="profile-image"
           />
           <div className="profile-info">
-            <span className="floating-text float-1">{t('CLICK_ME')}</span>
-            <span className="floating-text float-2">{t('CLICK_ME')}</span>
-            <span className="floating-text float-3">{t('CLICK_ME')}</span>
-            <span className="floating-text float-4">{t('CLICK_ME')}</span>
-            <span className="floating-text float-5">{t('CLICK_ME')}</span>
+            <span className="floating-text float-1">{t("CLICK_ME")}</span>
+            <span className="floating-text float-2">{t("CLICK_ME")}</span>
+            <span className="floating-text float-3">{t("CLICK_ME")}</span>
+            <span className="floating-text float-4">{t("CLICK_ME")}</span>
+            <span className="floating-text float-5">{t("CLICK_ME")}</span>
 
             <h1 className="main-title">MATHEUS ABREU E LIMA</h1>
-            <p className="subtitle">{t('ALIAS_SUBTITLE')}</p>
-            <p className="info-text">FREELANCE DEVELOPER</p>
-            <p className="info-text">{t('LOCATION')}</p>
+            <p className="subtitle">{t("ALIAS_SUBTITLE")}</p>
+            <p className="info-text">{t("DEVELOPER_TITLE")}</p>
+            <p className="info-text">{t("LOCATION")}</p>
           </div>
         </div>
         <div className={`flipped-content ${isFlipped ? "visible" : ""}`}>
           <p className="flipped-text">
-            {t('ABOUT_TEXT')} <br /><br />
-            {t('HIRE_ME_ANYWAY')}
+            {t("ABOUT_TEXT")} <br />
+            <br />
           </p>
         </div>
       </section>
@@ -46,14 +46,14 @@ function About() {
       <div className="info-sections">
         <div className="info-side left-side">
           <div className="info-column">
-            <h2 className="column-title">{t('EDUCATION')}</h2>
-            <p className="column-subtitle">{t('ACADEMIC_DEGREE')}</p>
-            <p className="column-text">{t('EDUCATION_DEGREE')}</p>
-            <p className="column-detail">{t('EDUCATION_GRADUATION')}</p>
+            <h2 className="column-title">{t("EDUCATION")}</h2>
+            <p className="column-subtitle">{t("ACADEMIC_DEGREE")}</p>
+            <p className="column-text">{t("EDUCATION_DEGREE")}</p>
+            <p className="column-detail">{t("EDUCATION_GRADUATION")}</p>
 
             <div className="section-divider"></div>
 
-            <p className="column-subtitle">{t('COMPLEMENTARY_COURSES')}</p>
+            <p className="column-subtitle">{t("COMPLEMENTARY_COURSES")}</p>
             <p className="column-text">
               THE COMPLETE FLUTTER DEVELOPMENT BOOTCAMP WITH DART
               <br />
@@ -86,84 +86,121 @@ function About() {
             </p>
           </div>
           <div className="info-column">
-            <h2 className="column-title">{t('SKILLS')}</h2>
-            <p className="column-subtitle">{t('TECHNICAL_EXPERTISE')}</p>
+            <h2 className="column-title">{t("SKILLS")}</h2>
+            <p className="column-subtitle">{t("TECHNICAL_EXPERTISE")}</p>
             <p className="column-text">
-              {t('SKILLS_JAVASCRIPT')}
-              <span className="light-weight">{t('SKILLS_JAVASCRIPT_DETAILS')}</span>;
+              {t("SKILLS_JAVASCRIPT")}
+              <span className="light-weight">
+                {t("SKILLS_JAVASCRIPT_DETAILS")}
+              </span>
+              ;
               <br />
-              {t('SKILLS_CSHARP')}
-              <span className="light-weight">{t('SKILLS_CSHARP_DETAILS')}</span>;
+              {t("SKILLS_CSHARP")}
+              <span className="light-weight">{t("SKILLS_CSHARP_DETAILS")}</span>
+              ;
               <br />
-              {t('SKILLS_MOBILE')}
-              <span className="light-weight">{t('SKILLS_MOBILE_DETAILS')}</span>
+              {t("SKILLS_MOBILE")}
+              <span className="light-weight">{t("SKILLS_MOBILE_DETAILS")}</span>
               <br />
-              {t('SKILLS_DATABASES')}
-              <span className="light-weight">{t('SKILLS_DATABASES_DETAILS')}</span>
+              {t("SKILLS_DATABASES")}
+              <span className="light-weight">
+                {t("SKILLS_DATABASES_DETAILS")}
+              </span>
               <br />
-              {t('SKILLS_CLOUD')}
-              <span className="light-weight">{t('SKILLS_CLOUD_DETAILS')}</span>
+              {t("SKILLS_CLOUD")}
+              <span className="light-weight">{t("SKILLS_CLOUD_DETAILS")}</span>
               <br />
-              {t('SKILLS_UIUX')}
-              <span className="light-weight">{t('SKILLS_UIUX_DETAILS')}</span>
+              {t("SKILLS_UIUX")}
+              <span className="light-weight">{t("SKILLS_UIUX_DETAILS")}</span>
               <br />
-              {t('SKILLS_VERSION')}
-              <span className="light-weight">{t('SKILLS_VERSION_DETAILS')}</span>
+              {t("SKILLS_VERSION")}
+              <span className="light-weight">
+                {t("SKILLS_VERSION_DETAILS")}
+              </span>
             </p>
           </div>
         </div>
 
         <div className="info-side right-side">
           <div className="info-column">
-            <h2 className="column-title">{t('EXPERIENCE')}</h2>
-            <p className="column-subtitle">{t('PROFESSIONAL_JOURNEY')}</p>
-            <p className="column-text">{t('EXPERIENCE_AUTOMASUL')}</p>
-            <p className="column-detail">{t('EXPERIENCE_AUTOMASUL_DATE')}</p>
+            <h2 className="column-title">{t("EXPERIENCE")}</h2>
+            <p className="column-subtitle">{t("PROFESSIONAL_JOURNEY")}</p>
+
+            <p className="column-text">{t("EXPERIENCE_EXPERTVISION")}</p>
+            <p className="column-detail">{t("EXPERIENCE_EXPERTVISION_DATE")}</p>
             <p className="light-weight">
-              {t('EXPERIENCE_AUTOMASUL_DETAILS').map((detail, index) => (
+              {t("EXPERIENCE_EXPERTVISION_DETAILS").map((detail, index) => (
                 <React.Fragment key={index}>
-                  - {detail}<br />
+                  - {detail}
+                  <br />
                 </React.Fragment>
               ))}
             </p>
 
-            <p className="column-text">{t('EXPERIENCE_CENTRO')}</p>
-            <p className="column-detail">{t('EXPERIENCE_CENTRO_DATE')}</p>
+            <p className="column-text">{t("EXPERIENCE_FREELANCE")}</p>
+            <p className="column-detail">{t("EXPERIENCE_FREELANCE_DATE")}</p>
             <p className="light-weight">
-              {t('EXPERIENCE_CENTRO_DETAILS').map((detail, index) => (
+              {t("EXPERIENCE_FREELANCE_DETAILS").map((detail, index) => (
                 <React.Fragment key={index}>
-                  - {detail}<br />
+                  - {detail}
+                  <br />
                 </React.Fragment>
               ))}
             </p>
 
-            <p className="column-text">{t('EXPERIENCE_SONTAG')}</p>
-            <p className="column-detail">{t('EXPERIENCE_SONTAG_DATE')}</p>
+            <p className="column-text">{t("EXPERIENCE_AUTOMASUL")}</p>
+            <p className="column-detail">{t("EXPERIENCE_AUTOMASUL_DATE")}</p>
             <p className="light-weight">
-              {t('EXPERIENCE_SONTAG_DETAILS').map((detail, index) => (
+              {t("EXPERIENCE_AUTOMASUL_DETAILS").map((detail, index) => (
                 <React.Fragment key={index}>
-                  - {detail}<br />
+                  - {detail}
+                  <br />
                 </React.Fragment>
               ))}
             </p>
 
-            <p className="column-text">{t('EXPERIENCE_SCHOLARSHIP')}</p>
-            <p className="column-detail">{t('EXPERIENCE_SCHOLARSHIP_DATE')}</p>
+            <p className="column-text">{t("EXPERIENCE_CENTRO")}</p>
+            <p className="column-detail">{t("EXPERIENCE_CENTRO_DATE")}</p>
             <p className="light-weight">
-              {t('EXPERIENCE_SCHOLARSHIP_DETAILS').map((detail, index) => (
+              {t("EXPERIENCE_CENTRO_DETAILS").map((detail, index) => (
                 <React.Fragment key={index}>
-                  - {detail}<br />
+                  - {detail}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+
+            <p className="column-text">{t("EXPERIENCE_SONTAG")}</p>
+            <p className="column-detail">{t("EXPERIENCE_SONTAG_DATE")}</p>
+            <p className="light-weight">
+              {t("EXPERIENCE_SONTAG_DETAILS").map((detail, index) => (
+                <React.Fragment key={index}>
+                  - {detail}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+
+            <p className="column-text">{t("EXPERIENCE_SCHOLARSHIP")}</p>
+            <p className="column-detail">{t("EXPERIENCE_SCHOLARSHIP_DATE")}</p>
+            <p className="light-weight">
+              {t("EXPERIENCE_SCHOLARSHIP_DETAILS").map((detail, index) => (
+                <React.Fragment key={index}>
+                  - {detail}
+                  <br />
                 </React.Fragment>
               ))}
             </p>
           </div>
           <div className="info-column">
-            <h2 className="column-title">{t('LANGUAGES')}</h2>
-            <p className="column-subtitle">{t('COMMUNICATION')}</p>
+            <h2 className="column-title">{t("LANGUAGES")}</h2>
+            <p className="column-subtitle">{t("COMMUNICATION")}</p>
             <p className="column-text">
-              {t('PORTUGUESE')} - <span className="light-weight">{t('NATIVE')}</span>
+              {t("PORTUGUESE")} -{" "}
+              <span className="light-weight">{t("NATIVE")}</span>
               <br />
-              {t('ENGLISH')} - <span className="light-weight">{t('FLUENT')}</span>
+              {t("ENGLISH")} -{" "}
+              <span className="light-weight">{t("FLUENT")}</span>
             </p>
           </div>
         </div>

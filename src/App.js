@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Settings from "./components/Settings";
 import Notification from "./components/Notification";
+import WelcomePopup from "./components/WelcomePopup";
 import "./styles/variables.css";
 import "./App.css";
 
@@ -19,6 +20,7 @@ function AppContent() {
   return (
     <Router>
       <div className="App" data-language={language}>
+        <WelcomePopup />
         <Settings />
         <Notification />
         <Navigation />

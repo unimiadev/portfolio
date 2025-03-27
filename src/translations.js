@@ -22,7 +22,7 @@ export const translations = {
     YEARS_OLD: "23 YEARS OLD",
     LOCATION: "SOLEDADE/RS - BRAZIL",
     ABOUT_TEXT:
-      "As a freelancer developer, I write code that speaks fluent ReactJS and JavaScript, bringing concepts to life with a sprinkle of HTML and CSS magic. A tech enthusiast with a Bachelor's degree in Computer Science, I've also dabbled in Flutter and .NET, but my heart belongs to building interactive, user-friendly web applications.",
+      "As a full-stack developer with a passion for front-end development, I specialize in creating beautiful and intuitive web applications. My expertise in ReactJS and JavaScript allows me to build responsive and interactive user interfaces, while my knowledge of backend technologies enables me to develop complete solutions. With a Bachelor's degree in Computer Science and experience in both front-end and back-end development, I bring ideas to life with clean code and modern design principles.",
     HIRE_ME_ANYWAY:
       "(BUT PLEASE, STILL HIRE ME FOR FLUTTER AND .NET PROJECTS ANYWAY)",
 
@@ -76,6 +76,7 @@ export const translations = {
       "Developed and maintained internal tools using C# and .NET Framework to improve the efficiency of the company's operations.",
       "Collaborated with cross-functional teams to implement and integrate new features and functionalities.",
       "Conducted thorough testing and debugging to ensure high-quality software solutions.",
+      "Developed web applications using JavaScript and modern web technologies to enhance user experience and streamline business processes.",
     ],
 
     EXPERIENCE_CENTRO:
@@ -95,6 +96,21 @@ export const translations = {
     EXPERIENCE_SCHOLARSHIP_DATE: "MARCH 2018 - FEBRUARY 2021",
     EXPERIENCE_SCHOLARSHIP_DETAILS: [
       "Created mobile and web applications for university use, in addition to developing educational content.",
+    ],
+
+    EXPERIENCE_FREELANCE: "FREELANCE FULL-STACK DEVELOPER",
+    EXPERIENCE_FREELANCE_DATE: "SEPTEMBER 2023 - PRESENT",
+    EXPERIENCE_FREELANCE_DETAILS: [
+      "Working as a freelance full-stack developer with a focus on front-end development.",
+      "Creating responsive and interactive web applications using modern technologies.",
+      "Collaborating with clients to deliver high-quality solutions that meet their needs.",
+    ],
+
+    EXPERIENCE_EXPERTVISION: "FRONT-END DEVELOPER AT EXPERTVISION",
+    EXPERIENCE_EXPERTVISION_DATE: "JANUARY 2025 - PRESENT",
+    EXPERIENCE_EXPERTVISION_DETAILS: [
+      "Working as a senior front-end developer specializing in ReactJS, NextJS, and Firebase.",
+      "Developing and maintaining high-performance web applications with modern best practices.",
     ],
 
     // About Page - Skills
@@ -122,11 +138,11 @@ export const translations = {
     // Projects Descriptions
     PROJECT_NATAN_TITLE: "NATAN TATTOO",
     PROJECT_NATAN_DESC:
-      "A modern, responsive single-page website designed and developed for a professional tattoo artist. The website showcases the artist's work, provides information about services, and facilitates client contact.",
+      "A modern landing page for a tattoo artist, showcasing their work and providing an easy way for clients to get in touch.",
 
     PROJECT_PORTFOLIO_TITLE: "UNIMIA PORTFOLIO",
     PROJECT_PORTFOLIO_DESC:
-      "A personal portfolio website built with React, featuring smooth animations and responsive design. Showcasing my projects and skills in web development.",
+      "A personal portfolio website featuring smooth animations and a responsive design that works seamlessly across all devices.",
 
     NOTIFICATIONS: "NOTIFICATIONS",
     CLEAR_ALL: "CLEAR ALL",
@@ -147,7 +163,29 @@ export const translations = {
     WELCOME_NOTIFICATION_DEFAULT:
       "Welcome to my portfolio! Feel free to explore my work and get in touch if you'd like to collaborate on a project!",
     TIME_NOTIFICATION_TITLE: "STILL HERE? LET'S WORK TOGETHER!",
-    TIME_NOTIFICATION_MESSAGE: "I see you've been exploring my portfolio for a while now. If you're interested in working together, why not head over to the Contact page and drop me a message? I'd love to hear about your project!",
+    TIME_NOTIFICATION_MESSAGE:
+      "I see you've been exploring my portfolio for a while now. If you're interested in working together, why not head over to the Contact page and drop me a message? I'd love to hear about your project!",
+    WELCOME_TITLE: "Welcome to My Portfolio!",
+    WELCOME_LANGUAGE: "Choose Your Language",
+    WELCOME_THEME: "Choose Your Theme",
+    WELCOME_INFO:
+      "You can change these settings anytime by clicking the settings icon in the top right corner.",
+    WELCOME_CONTINUE: "Continue",
+    DEVELOPER_TITLE: "FULL-STACK DEVELOPER",
+    CLOSED_SOURCE_PROJECTS: "CLOSED SOURCE PROJECTS",
+    OPEN_SOURCE_PROJECTS: "OPEN SOURCE PROJECTS",
+    PROJECT_SEUCURSO_TITLE: "SEU CURSO DIGITAL",
+    PROJECT_SEUCURSO_DESC:
+      "A comprehensive platform for managing and delivering online courses, featuring a modern interface and seamless user experience.",
+    PROJECT_BEHARV_TITLE: "BEHARV",
+    PROJECT_BEHARV_DESC:
+      "A digital platform for agricultural management, helping farmers optimize their operations and track their harvests efficiently.",
+    PROJECT_LARHHUB_TITLE: "LARHUB",
+    PROJECT_LARHHUB_DESC:
+      "A specialized platform for the jewelry industry, connecting artisans with customers and facilitating the sale of unique pieces.",
+    PROJECT_EXPERTVISION_TITLE: "EXPERTVISION",
+    PROJECT_EXPERTVISION_DESC:
+      "A professional platform for vision care services, offering appointment scheduling and comprehensive eye care information.",
   },
   "PT-BR": {
     // Navigation
@@ -172,7 +210,7 @@ export const translations = {
     YEARS_OLD: "23 ANOS",
     LOCATION: "SOLEDADE/RS - BRASIL",
     ABOUT_TEXT:
-      "Como um desenvolvedor freelancer, eu escrevo código que fala ReactJS e JavaScript fluentemente, dando vida a conceitos com um toque de magia em HTML e CSS. Um entusiasta de tecnologia com Bacharelado em Ciência da Computação, também já me aventurei com Flutter e .NET, mas meu coração pertence à construção de aplicações web interativas e amigáveis.",
+      "Como desenvolvedor full-stack com paixão pelo desenvolvimento front-end, eu me especializo em criar aplicações web bonitas e intuitivas. Minha expertise em ReactJS e JavaScript me permite construir interfaces de usuário responsivas e interativas, enquanto meu conhecimento em tecnologias backend me permite desenvolver soluções completas. Com um Bacharelado em Ciência da Computação e experiência tanto em desenvolvimento front-end quanto back-end, eu dou vida às ideias com código limpo e princípios modernos de design.",
     HIRE_ME_ANYWAY:
       "(MAS POR FAVOR, ME CONTRATE PARA PROJETOS EM FLUTTER E .NET MESMO ASSIM)",
 
@@ -225,7 +263,8 @@ export const translations = {
     EXPERIENCE_AUTOMASUL_DETAILS: [
       "Desenvolvi e mantive ferramentas internas usando C# e .NET Framework para melhorar a eficiência das operações da empresa.",
       "Colaborei com equipes multifuncionais para implementar e integrar novos recursos e funcionalidades.",
-      "Realizei testes e depuração minuciosos para garantir soluções de software de alta qualidade.",
+      "Realizei testes e depuração abrangentes para garantir soluções de software de alta qualidade.",
+      "Desenvolvi aplicações web usando JavaScript e tecnologias web modernas para melhorar a experiência do usuário e otimizar processos de negócios.",
     ],
 
     EXPERIENCE_CENTRO:
@@ -245,6 +284,21 @@ export const translations = {
     EXPERIENCE_SCHOLARSHIP_DATE: "MARÇO 2018 - FEVEREIRO 2021",
     EXPERIENCE_SCHOLARSHIP_DETAILS: [
       "Criei aplicações móveis e web para uso universitário, além de desenvolver conteúdo educacional.",
+    ],
+
+    EXPERIENCE_FREELANCE: "DESENVOLVEDOR FULL-STACK FREELANCE",
+    EXPERIENCE_FREELANCE_DATE: "SETEMBRO 2023 - ATUAL",
+    EXPERIENCE_FREELANCE_DETAILS: [
+      "Trabalhando como desenvolvedor full-stack freelance com foco em desenvolvimento front-end.",
+      "Criando aplicações web responsivas e interativas usando tecnologias modernas.",
+      "Colaborando com clientes para entregar soluções de alta qualidade que atendam suas necessidades.",
+    ],
+
+    EXPERIENCE_EXPERTVISION: "DESENVOLVEDOR FRONT-END NA EXPERTVISION",
+    EXPERIENCE_EXPERTVISION_DATE: "JANEIRO 2025 - ATUAL",
+    EXPERIENCE_EXPERTVISION_DETAILS: [
+      "Trabalhando como desenvolvedor front-end pleno com especialidade em ReactJS, NextJS e Firebase.",
+      "Desenvolvendo e mantendo aplicações web de alto desempenho com as melhores práticas modernas.",
     ],
 
     // About Page - Skills
@@ -272,11 +326,11 @@ export const translations = {
     // Projects Descriptions
     PROJECT_NATAN_TITLE: "NATAN TATTOO",
     PROJECT_NATAN_DESC:
-      "Um website moderno e responsivo de página única projetado e desenvolvido para um tatuador profissional. O site apresenta o trabalho do artista, fornece informações sobre serviços e facilita o contato com clientes.",
+      "Uma landing page moderna para um tatuador, mostrando seus trabalhos e fornecendo uma maneira fácil para os clientes entrarem em contato.",
 
     PROJECT_PORTFOLIO_TITLE: "PORTFÓLIO UNIMIA",
     PROJECT_PORTFOLIO_DESC:
-      "Um site portfólio pessoal construído com React, apresentando animações suaves e design responsivo. Mostrando meus projetos e habilidades em desenvolvimento web.",
+      "Um site de portfólio pessoal com animações suaves e design responsivo que funciona perfeitamente em todos os dispositivos.",
 
     NOTIFICATIONS: "NOTIFICAÇÕES",
     CLEAR_ALL: "LIMPAR TUDO",
@@ -297,6 +351,28 @@ export const translations = {
     WELCOME_NOTIFICATION_DEFAULT:
       "Bem-vindo ao meu portfólio! Fique à vontade para explorar meu trabalho e entrar em contato se quiser colaborar em um projeto!",
     TIME_NOTIFICATION_TITLE: "AINDA POR AQUI? VAMOS TRABALHAR JUNTOS!",
-    TIME_NOTIFICATION_MESSAGE: "Vejo que você está explorando meu portfólio há algum tempo. Se você está interessado em trabalharmos juntos, que tal ir até a página de Contato e me mandar uma mensagem? Adoraria ouvir sobre seu projeto!",
+    TIME_NOTIFICATION_MESSAGE:
+      "Vejo que você está explorando meu portfólio há algum tempo. Se você está interessado em trabalharmos juntos, que tal ir até a página de Contato e me mandar uma mensagem? Adoraria ouvir sobre seu projeto!",
+    WELCOME_TITLE: "Bem-vindo ao Meu Portfólio!",
+    WELCOME_LANGUAGE: "Escolha seu Idioma",
+    WELCOME_THEME: "Escolha seu Tema",
+    WELCOME_INFO:
+      "Você pode alterar essas configurações a qualquer momento clicando no ícone de configurações no canto superior direito.",
+    WELCOME_CONTINUE: "Continuar",
+    DEVELOPER_TITLE: "DESENVOLVEDOR FULL-STACK",
+    CLOSED_SOURCE_PROJECTS: "PROJETOS DE CÓDIGO FECHADO",
+    OPEN_SOURCE_PROJECTS: "PROJETOS DE CÓDIGO ABERTO",
+    PROJECT_SEUCURSO_TITLE: "SEU CURSO DIGITAL",
+    PROJECT_SEUCURSO_DESC:
+      "Uma plataforma completa para gerenciamento e entrega de cursos online, com interface moderna e experiência de usuário fluida.",
+    PROJECT_BEHARV_TITLE: "BEHARV",
+    PROJECT_BEHARV_DESC:
+      "Uma plataforma digital para gestão agrícola, ajudando agricultores a otimizar suas operações e acompanhar suas colheitas de forma eficiente.",
+    PROJECT_LARHHUB_TITLE: "LARHUB",
+    PROJECT_LARHHUB_DESC:
+      "Uma plataforma especializada para a indústria de joias, conectando artesãos com clientes e facilitando a venda de peças únicas.",
+    PROJECT_EXPERTVISION_TITLE: "EXPERTVISION",
+    PROJECT_EXPERTVISION_DESC:
+      "Uma plataforma profissional para serviços de cuidados com a visão, oferecendo agendamento de consultas e informações abrangentes sobre cuidados com os olhos.",
   },
 };
