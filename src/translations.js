@@ -176,16 +176,15 @@ export const translations = {
     OPEN_SOURCE_PROJECTS: "OPEN SOURCE PROJECTS",
     PROJECT_SEUCURSO_TITLE: "SEU CURSO DIGITAL",
     PROJECT_SEUCURSO_DESC:
-      "A comprehensive platform for managing and delivering online courses, featuring a modern interface and seamless user experience.",
+      "Web and mobile learning platform offering free courses in Portuguese.",
     PROJECT_BEHARV_TITLE: "BEHARV",
     PROJECT_BEHARV_DESC:
-      "A digital platform for agricultural management, helping farmers optimize their operations and track their harvests efficiently.",
+      "Web and mobile learning platform offering free courses in English and Spanish.",
     PROJECT_LARHHUB_TITLE: "LARHUB",
-    PROJECT_LARHHUB_DESC:
-      "A specialized platform for the jewelry industry, connecting artisans with customers and facilitating the sale of unique pieces.",
+    PROJECT_LARHHUB_DESC: "Web platform for real estate management.",
     PROJECT_EXPERTVISION_TITLE: "EXPERTVISION",
     PROJECT_EXPERTVISION_DESC:
-      "A professional platform for vision care services, offering appointment scheduling and comprehensive eye care information.",
+      "A modern and responsive website for Expert Vision, a technology solutions company.",
   },
   "PT-BR": {
     // Navigation
@@ -364,15 +363,14 @@ export const translations = {
     OPEN_SOURCE_PROJECTS: "PROJETOS DE CÓDIGO ABERTO",
     PROJECT_SEUCURSO_TITLE: "SEU CURSO DIGITAL",
     PROJECT_SEUCURSO_DESC:
-      "Uma plataforma completa para gerenciamento e entrega de cursos online, com interface moderna e experiência de usuário fluida.",
+      "Plataforma web e mobile de ensino que oferece cursos gratuitos na língua portuguesa.",
     PROJECT_BEHARV_TITLE: "BEHARV",
     PROJECT_BEHARV_DESC:
-      "Uma plataforma digital para gestão agrícola, ajudando agricultores a otimizar suas operações e acompanhar suas colheitas de forma eficiente.",
+      "Plataforma web e mobile de ensino que oferece cursos gratuitos na língua inglesa e espanhola.",
     PROJECT_LARHHUB_TITLE: "LARHUB",
-    PROJECT_LARHHUB_DESC:
-      "Uma plataforma especializada para a indústria de joias, conectando artesãos com clientes e facilitando a venda de peças únicas.",
+    PROJECT_LARHHUB_DESC: "Plataforma web de gerenciamento imobiliário.",
     PROJECT_EXPERTVISION_TITLE: "EXPERTVISION",
     PROJECT_EXPERTVISION_DESC:
-      "Uma plataforma profissional para serviços de cuidados com a visão, oferecendo agendamento de consultas e informações abrangentes sobre cuidados com os olhos.",
+      "Um website moderno e responsivo para a Expert Vision, uma empresa de soluções tecnológicas.",
   },
 };

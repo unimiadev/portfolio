@@ -10,25 +10,41 @@ function ParticleBackground() {
     let animationFrameId;
     let particles = [];
 
-    // Set canvas size
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    resizeCanvas();
-    window.addEventListener("resize", resizeCanvas);
+    // Check if device is mobile
+    const isMobile = window.innerWidth <= 768;
+    const isSmallMobile = window.innerWidth <= 480;
+
+    if (isMobile) {
+      canvas.classList.add("mobile");
+    }
 
     // Particle class
     class Particle {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * 0.8 - 0.4;
-        this.speedY = Math.random() * 0.8 - 0.4;
+
+        // Smaller particles on mobile
+        if (isSmallMobile) {
+          this.size = Math.random() * 1.5 + 0.5; // 0.5-2px on small mobile
+        } else if (isMobile) {
+          this.size = Math.random() * 2 + 0.5; // 0.5-2.5px on mobile
+        } else {
+          this.size = Math.random() * 3 + 1; // 1-4px on desktop
+        }
+
+        // Slower movement on mobile
+        if (isMobile) {
+          this.speedX = Math.random() * 0.5 - 0.25;
+          this.speedY = Math.random() * 0.5 - 0.25;
+        } else {
+          this.speedX = Math.random() * 0.8 - 0.4;
+          this.speedY = Math.random() * 0.8 - 0.4;
+        }
+
         this.color = `rgba(${Math.random() * 100 + 155}, ${
           Math.random() * 100 + 155
-        }, ${Math.random() * 100 + 155}, 0.8)`;
+        }, ${Math.random() * 100 + 155}, ${isMobile ? 0.6 : 0.8})`;
       }
 
       update() {
@@ -48,28 +64,48 @@ function ParticleBackground() {
       }
     }
 
-    // Create particles
+    // Create particles function - defined before being used
     const createParticles = () => {
       particles = [];
-      for (let i = 0; i < 150; i++) {
+      // Fewer particles on mobile
+      const particleCount = isSmallMobile ? 50 : isMobile ? 80 : 150;
+
+      for (let i = 0; i < particleCount; i++) {
         particles.push(new Particle());
       }
     };
 
+    // Set canvas size
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Recreate particles when window is resized
+      createParticles();
+    };
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
     // Draw connections between particles
     const drawConnections = () => {
+      // Shorter connection distance on mobile
+      const connectionDistance = isMobile ? 120 : 200;
+      const connectionOpacity = isMobile ? 0.2 : 0.3;
+      const lineWidth = isMobile ? 1 : 1.5;
+
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
           const dy = particles[i].y - particles[j].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 200) {
+          if (distance < connectionDistance) {
             ctx.beginPath();
             ctx.strokeStyle = `rgba(255, 255, 255, ${
-              0.3 * (1 - distance / 200)
+              connectionOpacity * (1 - distance / connectionDistance)
             })`;
-            ctx.lineWidth = 1.5;
+            ctx.lineWidth = lineWidth;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.stroke();
