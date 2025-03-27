@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LanguageProvider, useLanguage } from "./context/LanguageContext";
 import { ThemeProvider } from "./context/ThemeContext";
+import { PopupProvider } from "./context/PopupContext";
 import { Analytics } from "@vercel/analytics/react";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
@@ -11,6 +12,7 @@ import Contact from "./pages/Contact";
 import Settings from "./components/Settings";
 import Notification from "./components/Notification";
 import WelcomePopup from "./components/WelcomePopup";
+import ParticleBackground from "./components/ParticleBackground";
 import "./styles/variables.css";
 import "./App.css";
 
@@ -20,6 +22,7 @@ function AppContent() {
   return (
     <Router>
       <div className="App" data-language={language}>
+        <ParticleBackground />
         <WelcomePopup />
         <Settings />
         <Notification />
@@ -40,7 +43,9 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <AppContent />
+        <PopupProvider>
+          <AppContent />
+        </PopupProvider>
       </LanguageProvider>
     </ThemeProvider>
   );

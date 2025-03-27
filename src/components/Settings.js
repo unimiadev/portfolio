@@ -1,46 +1,46 @@
-import React, { useState } from 'react';
-import { FaCog } from 'react-icons/fa';
-import { BsSun, BsMoon } from 'react-icons/bs';
-import { useLanguage } from '../context/LanguageContext';
-import { useTheme } from '../context/ThemeContext';
-import '../styles/Settings.css';
+import React from "react";
+import { FaCog } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs";
+import { useLanguage } from "../context/LanguageContext";
+import { useTheme } from "../context/ThemeContext";
+import { usePopup } from "../context/PopupContext";
+import "../styles/Settings.css";
 
 function Settings() {
-  const [isOpen, setIsOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
   const { isDarkMode, toggleTheme } = useTheme();
+  const { activePopup, openPopup, closePopup } = usePopup();
+  const isOpen = activePopup === "settings";
 
   const toggleSettings = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      closePopup();
+    } else {
+      openPopup("settings");
+    }
   };
 
   return (
     <div className="settings-container">
-      <button 
-        className={`settings-button ${isOpen ? 'active' : ''}`} 
+      <button
+        className={`settings-button ${isOpen ? "active" : ""}`}
         onClick={toggleSettings}
         aria-label="Settings"
       >
         <FaCog />
       </button>
 
-      <div className={`settings-popup ${isOpen ? 'open' : ''}`}>
+      <div className={`settings-popup ${isOpen ? "open" : ""}`}>
         <div className="settings-option">
-          <span className="settings-label">{t('LANGUAGE')}</span>
-          <button 
-            className="toggle-button"
-            onClick={toggleLanguage}
-          >
+          <span className="settings-label">{t("LANGUAGE")}</span>
+          <button className="toggle-button" onClick={toggleLanguage}>
             {language}
           </button>
         </div>
 
         <div className="settings-option">
-          <span className="settings-label">{t('THEME')}</span>
-          <button 
-            className="toggle-button"
-            onClick={toggleTheme}
-          >
+          <span className="settings-label">{t("THEME")}</span>
+          <button className="toggle-button" onClick={toggleTheme}>
             {isDarkMode ? <BsMoon /> : <BsSun />}
           </button>
         </div>
@@ -49,4 +49,4 @@ function Settings() {
   );
 }
 
-export default Settings; 
+export default Settings;
