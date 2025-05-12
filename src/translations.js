@@ -19,10 +19,10 @@ export const translations = {
 
     // About
     ALIAS_SUBTITLE: "(YES, UNIMIA IS JUST AN ALIAS. SHOCKER, I KNOW.)",
-    YEARS_OLD: "23 YEARS OLD",
+    YEARS_OLD: "24 YEARS OLD",
     LOCATION: "SOLEDADE/RS - BRAZIL",
     ABOUT_TEXT:
-      "As a full-stack developer with a passion for front-end development, I specialize in creating beautiful and intuitive web applications. My expertise in ReactJS and JavaScript allows me to build responsive and interactive user interfaces, while my knowledge of backend technologies enables me to develop complete solutions. With a Bachelor's degree in Computer Science and experience in both front-end and back-end development, I bring ideas to life with clean code and modern design principles.",
+      "My journey into development began during my Computer Science studies at the University of Passo Fundo (UPF), where I discovered my passion for bringing ideas to life through code. From 2018 to 2022, I worked as a Full Stack Web and Mobile Developer at UPF, developing applications for university use while honing my skills in programming, UI design, and database integration. What started as academic curiosity evolved into a professional path that has taken me from scientific research to software engineering at Automasul and now to front-end development at ExpertVision.\n\nWhat sets me apart is my comprehensive technical toolkit combined with a design-oriented mindset. I believe in the power of Clean Architecture, Clean Code, and SOLID principles, which guide my approach to every project. My expertise spans TypeScript, JavaScript, React.js, Next.js, Flutter, and C#, allowing me to adapt to various technical requirements. I don't just build functional software; I craft experiences that are intuitive, responsive, and visually appealing. My background in both front-end and back-end technologies allows me to see the complete picture—from database architecture to pixel-perfect interfaces—while my passion for UI/UX ensures the user experience is always at the forefront.\n\nBeyond the professional sphere, I'm an enthusiastic Linux user (Arch, by the way!), a fan of open-source projects, and someone who genuinely enjoys the problem-solving aspects of development. I find myself constantly experimenting with new technologies and approaches in my spare time. This curiosity drives me to stay ahead of trends and continuously improve my skill set. Whether it's exploring new frameworks, contributing to open-source projects, or diving into design tools like Figma, I approach each learning opportunity with enthusiasm.\n\nMy development process is collaborative, methodical, and results-oriented. I thrive in agile environments where I can participate in strategic discussions to understand business needs and propose innovative solutions. I start by deeply understanding the problem, sketch out solutions using tools like Figma, build incrementally following best practices, and continuously refine based on feedback. This iterative approach, combined with my analytical thinking and problem-solving skills, allows me to deliver high-quality software that not only meets but exceeds expectations. I believe in clean, maintainable code that stands the test of time, and I'm always looking for ways to optimize both performance and user experience.",
     HIRE_ME_ANYWAY:
       "(BUT PLEASE, STILL HIRE ME FOR FLUTTER AND .NET PROJECTS ANYWAY)",
 
@@ -71,12 +71,12 @@ export const translations = {
 
     // About Page - Experience Details
     EXPERIENCE_AUTOMASUL: "SOFTWARE ENGINEER AT AUTOMASUL",
-    EXPERIENCE_AUTOMASUL_DATE: "JULY 2022 - AUGUST 2023",
+    EXPERIENCE_AUTOMASUL_DATE: "JULY 2022 - AUGUST 2024",
     EXPERIENCE_AUTOMASUL_DETAILS: [
-      "Developed and maintained internal tools using C# and .NET Framework to improve the efficiency of the company's operations.",
-      "Collaborated with cross-functional teams to implement and integrate new features and functionalities.",
-      "Conducted thorough testing and debugging to ensure high-quality software solutions.",
-      "Developed web applications using JavaScript and modern web technologies to enhance user experience and streamline business processes.",
+      "Developed and maintained internal tools using C# with .NET Framework, JavaScript with various frameworks and Flutter, enhancing operational efficiency and automating critical processes.",
+      "Collaborated closely with cross-functional teams, including operations, technical support, and management, to define requirements, integrate new features, and optimize workflows.",
+      "Actively participated in strategic meetings to understand business needs and propose innovative technological solutions to drive productivity.",
+      "Applied technical skills in JavaScript, React.JS, NodeJS, Flutter, C#, .NET Framework, SQL Server, Figma, and WPF.",
     ],
 
     EXPERIENCE_CENTRO:
@@ -92,10 +92,12 @@ export const translations = {
       "Maintained computer equipment and provided support for financial management software, enhancing operational efficiency.",
     ],
 
-    EXPERIENCE_SCHOLARSHIP: "SCIENTIFIC INITIATION SCHOLARSHIP PROGRAM",
-    EXPERIENCE_SCHOLARSHIP_DATE: "MARCH 2018 - FEBRUARY 2021",
+    EXPERIENCE_SCHOLARSHIP: "FULL STACK WEB AND MOBILE DEVELOPER AT UNIVERSITY OF PASSO FUNDO",
+    EXPERIENCE_SCHOLARSHIP_DATE: "MARCH 2018 - FEBRUARY 2022",
     EXPERIENCE_SCHOLARSHIP_DETAILS: [
-      "Created mobile and web applications for university use, in addition to developing educational content.",
+      "Developed mobile and web applications for university use, improving skills in programming, UI design, and database integration.",
+      "Contributed to the creation of educational content, focusing on accessibility, usability, and user engagement.",
+      "Refined problem-solving skills, team collaboration, and adaptability to new technologies.",
     ],
 
     EXPERIENCE_FREELANCE: "FREELANCE FULL-STACK DEVELOPER",
@@ -106,11 +108,14 @@ export const translations = {
       "Collaborating with clients to deliver high-quality solutions that meet their needs.",
     ],
 
-    EXPERIENCE_EXPERTVISION: "FRONT-END DEVELOPER AT EXPERTVISION",
+    EXPERIENCE_EXPERTVISION: "MID-LEVEL FRONT-END DEVELOPER AT EXPERTVISION",
     EXPERIENCE_EXPERTVISION_DATE: "JANUARY 2025 - PRESENT",
     EXPERIENCE_EXPERTVISION_DETAILS: [
-      "Working as a senior front-end developer specializing in ReactJS, NextJS, and Firebase.",
-      "Developing and maintaining high-performance web applications with modern best practices.",
+      "Actively contribute to the development of large-scale web systems, ensuring scalability and efficiency for a substantial number of users.",
+      "Design and implement intuitive and responsive user interfaces, providing a seamless user experience across multiple devices.",
+      "Develop and optimize administrative dashboards to facilitate system management and operations, offering advanced analysis and control tools.",
+      "Participate in agile development cycles, utilizing sprints to efficiently and continuously deliver features.",
+      "Develop with TypeScript, JavaScript, React.JS, Next.JS, Axios, Figma, Firebase, and Django.",
     ],
 
     // About Page - Skills
@@ -206,10 +211,10 @@ export const translations = {
 
     // About
     ALIAS_SUBTITLE: "(SIM, UNIMIA É SÓ UM APELIDO. SURPREENDENTE, EU SEI.)",
-    YEARS_OLD: "23 ANOS",
+    YEARS_OLD: "24 ANOS",
     LOCATION: "SOLEDADE/RS - BRASIL",
     ABOUT_TEXT:
-      "Como desenvolvedor full-stack com paixão pelo desenvolvimento front-end, eu me especializo em criar aplicações web bonitas e intuitivas. Minha expertise em ReactJS e JavaScript me permite construir interfaces de usuário responsivas e interativas, enquanto meu conhecimento em tecnologias backend me permite desenvolver soluções completas. Com um Bacharelado em Ciência da Computação e experiência tanto em desenvolvimento front-end quanto back-end, eu dou vida às ideias com código limpo e princípios modernos de design.",
+      "Minha jornada no desenvolvimento começou durante meus estudos em Ciência da Computação na Universidade de Passo Fundo (UPF), onde descobri minha paixão por dar vida às ideias através do código. De 2018 a 2022, trabalhei como Desenvolvedor Full Stack Web e Mobile na UPF, criando aplicações para uso universitário enquanto aprimorava minhas habilidades em programação, design de interface e integração de banco de dados. O que começou como curiosidade acadêmica evoluiu para um caminho profissional que me levou da pesquisa científica à engenharia de software na Automasul e agora ao desenvolvimento front-end na ExpertVision.\n\nO que me diferencia é meu conjunto abrangente de ferramentas técnicas combinado com uma mentalidade orientada ao design. Acredito no poder da Clean Architecture, Clean Code e princípios SOLID, que norteiam minha abordagem em cada projeto. Minha expertise abrange TypeScript, JavaScript, React.js, Next.js, Flutter e C#, permitindo-me adaptar a diversos requisitos técnicos. Não apenas construo software funcional; crio experiências que são intuitivas, responsivas e visualmente atraentes. Minha experiência em tecnologias front-end e back-end me permite ver o quadro completo—da arquitetura de banco de dados a interfaces com perfeitos detalhes—enquanto minha paixão por UI/UX garante que a experiência do usuário esteja sempre em primeiro plano.\n\nAlém da esfera profissional, sou um usuário entusiasta de Linux (Arch, a propósito!), fã de projetos open-source e alguém que genuinamente aprecia os aspectos de resolução de problemas do desenvolvimento. Estou constantemente experimentando novas tecnologias e abordagens em meu tempo livre. Esta curiosidade me motiva a estar à frente das tendências e a melhorar continuamente meu conjunto de habilidades. Seja explorando novos frameworks, contribuindo para projetos de código aberto ou me aprofundando em ferramentas de design como Figma, abordo cada oportunidade de aprendizado com entusiasmo.\n\nMeu processo de desenvolvimento é colaborativo, metódico e orientado a resultados. Prospero em ambientes ágeis onde posso participar de discussões estratégicas para entender as necessidades do negócio e propor soluções inovadoras. Começo entendendo profundamente o problema, esboço soluções usando ferramentas como Figma, construo incrementalmente seguindo as melhores práticas e refino continuamente com base em feedback. Esta abordagem iterativa, combinada com meu pensamento analítico e habilidades de resolução de problemas, me permite entregar software de alta qualidade que não apenas atende, mas excede as expectativas. Acredito em código limpo e manutenível que resiste ao teste do tempo, e estou sempre buscando maneiras de otimizar tanto o desempenho quanto a experiência do usuário.",
     HIRE_ME_ANYWAY:
       "(MAS POR FAVOR, ME CONTRATE PARA PROJETOS EM FLUTTER E .NET MESMO ASSIM)",
 
@@ -258,12 +263,12 @@ export const translations = {
 
     // About Page - Experience Details
     EXPERIENCE_AUTOMASUL: "ENGENHEIRO DE SOFTWARE NA AUTOMASUL",
-    EXPERIENCE_AUTOMASUL_DATE: "JULHO 2022 - AGOSTO 2023",
+    EXPERIENCE_AUTOMASUL_DATE: "JULHO 2022 - AGOSTO 2024",
     EXPERIENCE_AUTOMASUL_DETAILS: [
-      "Desenvolvi e mantive ferramentas internas usando C# e .NET Framework para melhorar a eficiência das operações da empresa.",
-      "Colaborei com equipes multifuncionais para implementar e integrar novos recursos e funcionalidades.",
-      "Realizei testes e depuração abrangentes para garantir soluções de software de alta qualidade.",
-      "Desenvolvi aplicações web usando JavaScript e tecnologias web modernas para melhorar a experiência do usuário e otimizar processos de negócios.",
+      "Desenvolvi e mantive ferramentas internas usando C# com .NET Framework, JavaScript com vários frameworks e Flutter, aprimorando a eficiência operacional e automatizando processos críticos.",
+      "Colaborei de perto com equipes multifuncionais, incluindo operações, suporte técnico e gestão, para definir requisitos, integrar novos recursos e otimizar fluxos de trabalho.",
+      "Participei ativamente de reuniões estratégicas para entender as necessidades de negócio e propor soluções tecnológicas inovadoras para impulsionar a produtividade.",
+      "Apliquei habilidades técnicas em JavaScript, React.JS, NodeJS, Flutter, C#, .NET Framework, SQL Server, Figma e WPF.",
     ],
 
     EXPERIENCE_CENTRO:
@@ -279,10 +284,12 @@ export const translations = {
       "Mantive equipamentos de informática e forneci suporte para software de gestão financeira, melhorando a eficiência operacional.",
     ],
 
-    EXPERIENCE_SCHOLARSHIP: "PROGRAMA DE BOLSA DE INICIAÇÃO CIENTÍFICA",
-    EXPERIENCE_SCHOLARSHIP_DATE: "MARÇO 2018 - FEVEREIRO 2021",
+    EXPERIENCE_SCHOLARSHIP: "DESENVOLVEDOR FULL STACK WEB E MOBILE NA UNIVERSIDADE DE PASSO FUNDO",
+    EXPERIENCE_SCHOLARSHIP_DATE: "MARÇO 2018 - FEVEREIRO 2022",
     EXPERIENCE_SCHOLARSHIP_DETAILS: [
-      "Criei aplicações móveis e web para uso universitário, além de desenvolver conteúdo educacional.",
+      "Desenvolvi aplicações móveis e web para uso universitário, aprimorando habilidades em programação, design de interface e integração de banco de dados.",
+      "Contribuí para a criação de conteúdo educacional, com foco em acessibilidade, usabilidade e engajamento do usuário.",
+      "Refinei habilidades de resolução de problemas, colaboração em equipe e adaptabilidade a novas tecnologias.",
     ],
 
     EXPERIENCE_FREELANCE: "DESENVOLVEDOR FULL-STACK FREELANCE",
@@ -293,11 +300,14 @@ export const translations = {
       "Colaborando com clientes para entregar soluções de alta qualidade que atendam suas necessidades.",
     ],
 
-    EXPERIENCE_EXPERTVISION: "DESENVOLVEDOR FRONT-END NA EXPERTVISION",
+    EXPERIENCE_EXPERTVISION: "DESENVOLVEDOR FRONT-END PLÊNO NA EXPERTVISION",
     EXPERIENCE_EXPERTVISION_DATE: "JANEIRO 2025 - ATUAL",
     EXPERIENCE_EXPERTVISION_DETAILS: [
-      "Trabalhando como desenvolvedor front-end pleno com especialidade em ReactJS, NextJS e Firebase.",
-      "Desenvolvendo e mantendo aplicações web de alto desempenho com as melhores práticas modernas.",
+      "Contribuo ativamente para o desenvolvimento de sistemas web de grande escala, garantindo escalabilidade e eficiência para um número substancial de usuários.",
+      "Projeto e implemento interfaces de usuário intuitivas e responsivas, proporcionando uma experiência perfeita em múltiplos dispositivos.",
+      "Desenvolvo e otimizo paineis administrativos para facilitar o gerenciamento e operações do sistema, oferecendo ferramentas avançadas de análise e controle.",
+      "Participo de ciclos de desenvolvimento ágil, utilizando sprints para entregar recursos de forma eficiente e contínua.",
+      "Desenvolvo com TypeScript, JavaScript, React.JS, Next.JS, Axios, Figma, Firebase e Django.",
     ],
 
     // About Page - Skills

@@ -1,50 +1,97 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { FaLightbulb, FaUserAlt, FaCogs } from "react-icons/fa";
 import "../styles/About.css";
 
 function About() {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [activeSection, setActiveSection] = useState('story');
+  const [aboutTextParts, setAboutTextParts] = useState([]);
   const { t } = useLanguage();
 
-  const handleClick = () => {
-    setIsFlipped(!isFlipped);
-  };
+  useEffect(() => {
+    // Split the about text into sections based on paragraphs
+    const textParts = t("ABOUT_TEXT").split('\n\n');
+    setAboutTextParts(textParts);
+  }, [t]);
 
   return (
     <div className="about-container">
-      <section
-        className={`profile-section ${isFlipped ? "flipped" : ""}`}
-        onClick={handleClick}
-      >
-        <div className={`profile-content ${isFlipped ? "hidden" : ""}`}>
+      <section className="profile-section">
+        <div className="profile-content">
           <img
             src="/assets/media/images/profile.jpg"
             alt="Profile"
             className="profile-image"
           />
           <div className="profile-info">
-            <span className="floating-text float-1">{t("CLICK_ME")}</span>
-            <span className="floating-text float-2">{t("CLICK_ME")}</span>
-            <span className="floating-text float-3">{t("CLICK_ME")}</span>
-            <span className="floating-text float-4">{t("CLICK_ME")}</span>
-            <span className="floating-text float-5">{t("CLICK_ME")}</span>
-
             <h1 className="main-title">MATHEUS ABREU E LIMA</h1>
             <p className="subtitle">{t("ALIAS_SUBTITLE")}</p>
             <p className="info-text">{t("DEVELOPER_TITLE")}</p>
             <p className="info-text">{t("LOCATION")}</p>
           </div>
         </div>
-        <div className={`flipped-content ${isFlipped ? "visible" : ""}`}>
-          <p className="flipped-text">
-            {t("ABOUT_TEXT")} <br />
-            <br />
-          </p>
-        </div>
+      </section>
+      
+      <div className="narrative-tabs">
+        <button 
+          className={`tab-button ${activeSection === 'story' ? 'active' : ''}`}
+          onClick={() => setActiveSection('story')}
+        >
+          <FaUserAlt /> <span>My Story</span>
+        </button>
+        <button 
+          className={`tab-button ${activeSection === 'value' ? 'active' : ''}`}
+          onClick={() => setActiveSection('value')}
+        >
+          <FaLightbulb /> <span>My Approach</span>
+        </button>
+        <button 
+          className={`tab-button ${activeSection === 'personality' ? 'active' : ''}`}
+          onClick={() => setActiveSection('personality')}
+        >
+          <FaUserAlt /> <span>Beyond Code</span>
+        </button>
+        <button 
+          className={`tab-button ${activeSection === 'process' ? 'active' : ''}`}
+          onClick={() => setActiveSection('process')}
+        >
+          <FaCogs /> <span>My Process</span>
+        </button>
+      </div>
+      
+      <section className="narrative-section">
+        {aboutTextParts.length > 0 && (
+          <div className="narrative-content">
+            {activeSection === 'story' && (
+              <div className="narrative-part">
+                <h2>My Journey</h2>
+                <p>{aboutTextParts[0]}</p>
+              </div>
+            )}
+            {activeSection === 'value' && (
+              <div className="narrative-part">
+                <h2>What Sets Me Apart</h2>
+                <p>{aboutTextParts[1]}</p>
+              </div>
+            )}
+            {activeSection === 'personality' && (
+              <div className="narrative-part">
+                <h2>Beyond The Code</h2>
+                <p>{aboutTextParts[2]}</p>
+              </div>
+            )}
+            {activeSection === 'process' && (
+              <div className="narrative-part">
+                <h2>My Development Process</h2>
+                <p>{aboutTextParts[3]}</p>
+              </div>
+            )}
+          </div>
+        )}
       </section>
 
       <div className="info-sections">
-        <div className="info-side left-side">
+        <div className="info-side">
           <div className="info-column">
             <h2 className="column-title">{t("EDUCATION")}</h2>
             <p className="column-subtitle">{t("ACADEMIC_DEGREE")}</p>
@@ -69,22 +116,22 @@ function About() {
               <br />
               <span className="light-weight">COD3R - 2022</span>
             </p>
+          </div>
+          
+          <div className="info-column">
+            <h2 className="column-title">{t("LANGUAGES")}</h2>
+            <p className="column-subtitle">{t("COMMUNICATION")}</p>
             <p className="column-text">
-              THE COMPLETE WEB DEVELOPMENT BOOTCAMP
+              {t("PORTUGUESE")} -{" "}
+              <span className="light-weight">{t("NATIVE")}</span>
               <br />
-              <span className="light-weight">THE APP BREWERY - 2021</span>
-            </p>
-            <p className="column-text">
-              CRIAÇÃO DE APPS ANDROID/IOS/WEB COM FLUTTER
-              <br />
-              <span className="light-weight">FLUTTER BRASIL - 2021</span>
-            </p>
-            <p className="column-text">
-              CURSO WEBMASTER FRONT-END COMPLETO
-              <br />
-              <span className="light-weight">DANKI CODE - 2020</span>
+              {t("ENGLISH")} -{" "}
+              <span className="light-weight">{t("FLUENT")}</span>
             </p>
           </div>
+        </div>
+
+        <div className="info-side">
           <div className="info-column">
             <h2 className="column-title">{t("SKILLS")}</h2>
             <p className="column-subtitle">{t("TECHNICAL_EXPERTISE")}</p>
@@ -93,11 +140,9 @@ function About() {
               <span className="light-weight">
                 {t("SKILLS_JAVASCRIPT_DETAILS")}
               </span>
-              ;
               <br />
               {t("SKILLS_CSHARP")}
               <span className="light-weight">{t("SKILLS_CSHARP_DETAILS")}</span>
-              ;
               <br />
               {t("SKILLS_MOBILE")}
               <span className="light-weight">{t("SKILLS_MOBILE_DETAILS")}</span>
@@ -119,89 +164,22 @@ function About() {
               </span>
             </p>
           </div>
-        </div>
-
-        <div className="info-side right-side">
+          
           <div className="info-column">
             <h2 className="column-title">{t("EXPERIENCE")}</h2>
             <p className="column-subtitle">{t("PROFESSIONAL_JOURNEY")}</p>
 
             <p className="column-text">{t("EXPERIENCE_EXPERTVISION")}</p>
             <p className="column-detail">{t("EXPERIENCE_EXPERTVISION_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_EXPERTVISION_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
 
             <p className="column-text">{t("EXPERIENCE_FREELANCE")}</p>
             <p className="column-detail">{t("EXPERIENCE_FREELANCE_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_FREELANCE_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
 
             <p className="column-text">{t("EXPERIENCE_AUTOMASUL")}</p>
             <p className="column-detail">{t("EXPERIENCE_AUTOMASUL_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_AUTOMASUL_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-
-            <p className="column-text">{t("EXPERIENCE_CENTRO")}</p>
-            <p className="column-detail">{t("EXPERIENCE_CENTRO_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_CENTRO_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-
-            <p className="column-text">{t("EXPERIENCE_SONTAG")}</p>
-            <p className="column-detail">{t("EXPERIENCE_SONTAG_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_SONTAG_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-
+            
             <p className="column-text">{t("EXPERIENCE_SCHOLARSHIP")}</p>
             <p className="column-detail">{t("EXPERIENCE_SCHOLARSHIP_DATE")}</p>
-            <p className="light-weight">
-              {t("EXPERIENCE_SCHOLARSHIP_DETAILS").map((detail, index) => (
-                <React.Fragment key={index}>
-                  - {detail}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-          </div>
-          <div className="info-column">
-            <h2 className="column-title">{t("LANGUAGES")}</h2>
-            <p className="column-subtitle">{t("COMMUNICATION")}</p>
-            <p className="column-text">
-              {t("PORTUGUESE")} -{" "}
-              <span className="light-weight">{t("NATIVE")}</span>
-              <br />
-              {t("ENGLISH")} -{" "}
-              <span className="light-weight">{t("FLUENT")}</span>
-            </p>
           </div>
         </div>
       </div>
