@@ -41,14 +41,6 @@ function Contact() {
         >
           <FaGithub />
         </a>
-        <a
-          href="https://www.linkedin.com/in/abreuelimamatheus/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-link"
-        >
-          <FaLinkedin />
-        </a>
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
