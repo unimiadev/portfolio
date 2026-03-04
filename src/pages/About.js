@@ -24,7 +24,7 @@ function About() {
             className="profile-image"
           />
           <div className="profile-info">
-            <h1 className="main-title">MIA ABREU E LIMA</h1>
+            <h1 className="main-title">MATHEUS ABREU E LIMA</h1>
             <p className="subtitle">{t("ALIAS_SUBTITLE")}</p>
             <p className="info-text">{t("DEVELOPER_TITLE")}</p>
             <p className="info-text">{t("LOCATION")}</p>
