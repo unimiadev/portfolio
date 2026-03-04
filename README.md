@@ -150,7 +150,7 @@ npm run build
 ## 👤 Author
 
 - GitHub: [@unimiadev](https://github.com/unimiadev)
-- Website: [unimia.dev](https://unimia.dev)
+- Website: [unimia](https://unimia.vercel.app/)
 
 ## 📄 License
 
