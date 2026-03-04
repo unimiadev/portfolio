@@ -20,7 +20,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `mailto:contact@unimia.dev?subject=Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:unimiadev@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
@@ -86,7 +86,7 @@ function Contact() {
 
       <p className="alternative-contact">
         {t("OR_EMAIL_DIRECTLY")}{" "}
-        <a href="mailto:contact@unimia.dev" className="email-link">
+        <a href="mailto:unimiadev@gmail.com" className="email-link">
           CONTACT@UNIMIA.DEV
         </a>
       </p>
